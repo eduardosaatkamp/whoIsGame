@@ -2,25 +2,25 @@ var personagens = [
     {
       nome: "Ditto",
       pistas: [
-        "Um pokémon misterioso capaz de transformar-se em qualquer outro pokémon.",
-        "Possui a habilidade 'Impostor' que lhe permite copiar as estatísticas e aparência do oponente.",
-        "É conhecido por sua face amigável e sorridente."
+        "É conhecido por sua face amigável e sorridente.",
+        "Possui a habilidade 'Impostor' que lhe permite copiar as estatísticas  do oponente.",
+        "Um pokémon misterioso capaz de transformar-se em qualquer outro pokémon."
       ]
     },
     {
       nome: "Mew",
       pistas: [
-        "Um pokémon lendário conhecido como o 'Pokémon dos genes'.",
-        "Dizem que possui a habilidade de usar qualquer golpe de outros pokémons.",
-        "Foi o primeiro pokémon adicionado à Pokédex após o lançamento inicial do jogo."
+        "Foi o primeiro pokémon adicionado à Pokédex após o lançamento inicial do jogo.",
+        "Um pokémon lendário e brincalhão.",
+        "Dizem que possui a habilidade de usar qualquer golpe de outros pokémons."
       ]
     },
     {
       nome: "Mewtwo",
       pistas: [
         "Um dos pokémons lendários mais poderosos e psíquicos.",
-        "Criado artificialmente a partir do DNA de Mew.",
-        "Foi o vilão principal do primeiro filme da franquia Pokémon."
+        "Criado artificialmente a partir do DNA de um pokemon.",
+        "Foi o vilão principal do primeiro filme da franquia Pokémon"
       ]
     }
   ];
@@ -48,7 +48,7 @@ var personagens = [
         pistasRestantes.shift();
         mostrarPista();
       } else {
-        pistaElement.textContent = "Suas tentativas acabaram. Eu sou " + personagemEscolhido.nome + "!";
+        pistaElement.textContent = "Suas tentativas acabaram. Beba um drink. Eu sou " + personagemEscolhido.nome + "!";
         palpiteInput.disabled = true;
       }
     }
