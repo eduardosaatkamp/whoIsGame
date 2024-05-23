@@ -43,6 +43,7 @@ var personagens = [
     if (palpite.toLowerCase() === personagemEscolhido.nome.toLowerCase()) {
       pistaElement.textContent = "Parabéns! Você acertou. Eu sou " + personagemEscolhido.nome + "!";
       palpiteInput.disabled = true;
+      document.getElementById("pokemon-image").src = "acertou.png";
     } else {
       if (pistasRestantes.length > 0) {
         pistasRestantes.shift();
@@ -50,6 +51,7 @@ var personagens = [
       } else {
         pistaElement.textContent = "Suas tentativas acabaram. Beba um drink. Eu sou " + personagemEscolhido.nome + "!";
         palpiteInput.disabled = true;
+        document.getElementById("pokemon-image").src = "terminou.png";
       }
     }
     palpiteInput.value = "";
