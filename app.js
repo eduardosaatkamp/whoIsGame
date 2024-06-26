@@ -38,6 +38,14 @@ var personagens = [
     }
   }
   
+  function revelarPokemon() {
+    pistaElement.textContent = "Revelação: Eu sou " + personagemEscolhido.nome + "!";
+  
+    document.getElementById("pokemon-image").src = "acertou.png"
+  
+    palpiteInput.disabled = true;
+  }
+
   function verificarPalpite() {
     var palpite = palpiteInput.value;
     if (palpite.toLowerCase() === personagemEscolhido.nome.toLowerCase()) {
